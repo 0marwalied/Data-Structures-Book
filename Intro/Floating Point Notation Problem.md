@@ -53,19 +53,28 @@ Each floating-point number is represented by **32 bits**, split into:
 ```python
 def encode_custom_float(value: float):
     import math
+
     if value == 0:
-        return '0' * 32
+        return '0' * 32  # 32-bit zero
 
     sign = -1 if value < 0 else 1
     abs_val = abs(value)
-    exponent = int(math.floor(math.log10(abs_val)))
-    mantissa = int(sign * abs_val / (10 ** exponent))
 
-    # remove trailing zeros in mantissa
+    # Convert to a mantissa * 10^exp format
+    str_val = str(abs_val).replace('.', '')
+    decimal_places = len(str(abs_val).split('.')[-1]) if '.' in str(abs_val) else 0
+
+    mantissa = int(str_val)
+    exponent = -decimal_places
+
+    # Remove trailing zeros from mantissa
     while mantissa % 10 == 0:
         mantissa //= 10
         exponent += 1
 
+    mantissa *= sign
+
+    # Convert to two's complement
     mantissa_bin = format((mantissa + (1 << 24)) % (1 << 24), '024b')
     exponent_bin = format((exponent + (1 << 8)) % (1 << 8), '08b')
 
