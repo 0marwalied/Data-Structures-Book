@@ -5,6 +5,8 @@
 #define INT       1
 #define FLOAT     2
 #define STRING    3
+#define TRUE      1
+#define FALSE     0
 
 // Defined but currently unused
 struct stackelement {
@@ -18,7 +20,7 @@ struct stackelement {
 
 struct stack {
 	int top;
-	int items[STACKSIZE];
+	double items[STACKSIZE];
 };
 
 int empty(struct stack *s) {
@@ -42,7 +44,7 @@ void popandtest(struct stack *s, int *x, int *isund) {
 	}
 }
 
-void push(struct stack *s, int val) {
+void push(struct stack *s, double val) {
 	if (s->top == STACKSIZE - 1) {
 		printf("Stack overflow\n");
 		exit(EXIT_FAILURE);
