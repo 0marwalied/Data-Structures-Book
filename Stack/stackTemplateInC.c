@@ -27,7 +27,7 @@ int empty(struct stack *s) {
 	return s->top == -1;
 }
 
-int pop(struct stack *s) {
+double pop(struct stack *s) {
 	if (empty(s)) {
 		printf("Stack underflow\n");
 		exit(EXIT_FAILURE);
