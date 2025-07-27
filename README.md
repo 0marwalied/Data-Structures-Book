@@ -15,7 +15,7 @@ Each file provides clean, well-structured code to support learning, revision, an
 
 ## 🚀 How to Use
 
-1. Clone the repository:
+- Clone the repository:
    ```bash
    git clone https://github.com/0marwalied/Data-Structures-Book.git
    cd Data-Structures-Book
