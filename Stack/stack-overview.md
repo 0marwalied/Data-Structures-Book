@@ -19,12 +19,12 @@ Stacks are widely used in:
 
 ## ⚙️ Main Operations
 
-| Operation       | Description                                |
-|----------------|--------------------------------------------|
-| `Push`          | Add an element to the top of the stack     |
-| `Pop`           | Remove the top element from the stack      |
-| `Peek` or `Top` | Look at the top element without removing it |
-| `isEmpty`       | Check if the stack is empty                |
+| Operation       | Description                                 |
+|----------------|---------------------------------------------|
+| `Push`         | Add an element to the top of the stack      |
+| `Pop`          | Remove the top element from the stack       |
+| `Peek` or `Top`| Look at the top element without removing it |
+| `isEmpty`      | Check if the stack is empty                 |
 
 ---
 
@@ -37,7 +37,8 @@ To determine if a string of parentheses is valid:
 3. Scope enders must match their respective **openers** (e.g., `(` with `)`, `{` with `}`, `[` with `]`).
 
 🔗 **Code Example on GitHub:**  
-[Validating Nested Parentheses - C++ Implementation](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/validatingNestedParentheses.cpp)
+- [Validating Nested Parentheses - C++ Implementation](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/validatingNestedParentheses.cpp)  
+- [Stack Template in C](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackTemplateInC.c)
 
 ### ✔️ Algorithm
 
