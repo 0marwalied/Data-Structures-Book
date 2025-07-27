@@ -9,7 +9,8 @@ Each file provides clean, well-structured code to support learning, revision, an
 ## 📂 Folder Structure
 
 - [`Intro/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Intro) – Foundational concepts including rational number examples (class vs. struct)
-- *(More folders will be added soon, e.g., `LinkedList/`, `Stack/`, `Queue/`, etc.)*
+- [`Stack/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Stack) – Stack operations and use cases including validating nested parentheses
+- *(More folders will be added soon, e.g., `LinkedList/`, `Queue/`, etc.)*
 
 ---
 
