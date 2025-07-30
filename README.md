@@ -21,6 +21,10 @@ Each file provides clean, well-structured code to support learning, revision, an
   &nbsp;&nbsp;&nbsp;&nbsp;A reusable template for stack implementation in C.  
   &nbsp;&nbsp;• [stackUsageExample.c](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackUsageExample.c):  
   &nbsp;&nbsp;&nbsp;&nbsp;Demonstrates basic stack operations with a simple usage example.  
+  &nbsp;&nbsp;• [stackTemplateInCPP.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackTemplateInCPP.cpp):  
+  &nbsp;&nbsp;&nbsp;&nbsp;Reusable, type-safe stack class using C++ templates.  
+  &nbsp;&nbsp;• [stackUsageExampleCpp.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackUsageExampleCpp.cpp):  
+  &nbsp;&nbsp;&nbsp;&nbsp;Usage demonstration of the C++ stack template.  
   &nbsp;&nbsp;• [validatingNestedParentheses.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/validatingNestedParentheses.cpp):  
   &nbsp;&nbsp;&nbsp;&nbsp;Checks for valid nested parentheses using a stack in C++.  
   &nbsp;&nbsp;• [infixToPostfix.c](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/infixToPostfix.c):  
