@@ -8,7 +8,7 @@ Each file provides clean, well-structured code to support learning, revision, an
 
 ## 📂 Folder Structure
 
-- [`Intro/`](https://github.com/omar-walied/Data-Structures-Book/tree/main/Intro) – Foundational concepts and rational number examples  
+- [`Intro/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Intro) – Foundational concepts and rational number examples  
   &nbsp;&nbsp;• [Floating Point Notation Problem.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/Floating%20Point%20Notation%20Problem.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Explains floating-point representation issues and common pitfalls in C++.  
   &nbsp;&nbsp;• [rationalClass.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/rationalClass.cpp):  
@@ -16,7 +16,7 @@ Each file provides clean, well-structured code to support learning, revision, an
   &nbsp;&nbsp;• [rationalStruct.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/rationalStruct.cpp):  
   &nbsp;&nbsp;&nbsp;&nbsp;Shows rational numbers with a C++ struct, focusing on simplicity and core operator overloading.
 
-- [`Stack/`](https://github.com/omar-walied/Data-Structures-Book/tree/main/Stack) – Stack operations and use cases  
+- [`Stack/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Stack) – Stack operations and use cases  
   &nbsp;&nbsp;• [stack-overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stack-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Comprehensive documentation of stack concepts, usage, and code examples.
 
