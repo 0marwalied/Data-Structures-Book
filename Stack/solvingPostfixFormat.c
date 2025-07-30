@@ -1,11 +1,7 @@
-#include "stackTemplateInC.c"
+#include "infixToPostfix.c"
 #include "math.h"
 
 #define MAXCOLS 80
-
-int isDigit(const int symb) {
-	return ('0' <= symb && symb <= '9');
-}
 
 double oper(char symb, double opnd1, double opnd2) {
 	switch (symb) {
@@ -13,7 +9,7 @@ double oper(char symb, double opnd1, double opnd2) {
 	case '-': return (opnd1 - opnd2);
 	case '*': return (opnd1 * opnd2);
 	case '/': return (opnd1 / opnd2);
-	case '^': return (pow(opnd1, opnd2));
+	case '$': return (pow(opnd1, opnd2));
 	default: printf("%s", "illegal operation");
 		exit(EXIT_FAILURE);
 	}
@@ -24,7 +20,7 @@ double eval(char expr[]) {
 	double opnd1, opnd2, value;
 	struct stack s; s.top = -1;
 	for (postition = 0; (c = expr[postition]) != '\0'; postition++) {
-		if (isDigit(c)) {
+		if (isoperand(c)) {
 			push(&s, (double)(c - '0'));
 		} else if (c != ' ') {
 			opnd2 = pop(&s);
@@ -61,3 +57,14 @@ void handleString(char expr[]) {
 // ( AB ^ C * ) - D + ( EF /) ( GH + ) /
 // ( AB ^ C * D - )  + ( ( EF / ) ( GH + ) / )
 // AB ^ C * D - EF / GH + / +
+
+
+int main() {
+	char infix[MAXCOLS], postr[MAXCOLS];
+	scanf("%&s", infix);
+	handleString(infix);
+	printf("%s%s", infix, " = ");
+	postfix(infix, postr);
+	double ans = eval(postr);
+	printf("%lf\n", ans);
+}
