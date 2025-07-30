@@ -21,7 +21,7 @@ public:
 		return top == -1;
 	}
 
-	void push(T& val) {
+	void push(T val) {
 		if (top == stacksize)
 			throw runtime_error("Stack Overflow");
 		nodes[top++] = val;
@@ -30,7 +30,7 @@ public:
 	T pop() {
 		if (top == -1)
 			throw runtime_error("Stack Underflow");
-		T val = nodes[top--];
+		T val = nodes[--top];
 		return val;
 	}
 
