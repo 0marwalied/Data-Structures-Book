@@ -28,12 +28,12 @@ Stacks are widely used in:
 
 ---
 
-## 🧱 Stack Template in C
+## 🧱 Stack Implementation and Usage
 
-A reusable and simple stack implementation in C using an array for storing elements. Useful for all types of basic stack problems.
-
-🔗 **Code Template on GitHub:**  
-[`stackTemplateInC.c`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackTemplateInC.c)
+- **Stack Template in C:**  
+  [`stackTemplateInC.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/stackTemplateInC.c)
+- **Stack Usage Example:**  
+  [`stackUsageExample.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/stackUsageExample.c)
 
 ---
 
@@ -45,6 +45,9 @@ To determine if a string of parentheses is valid:
 2. The number of left and right parentheses must be **equal**.
 3. Scope enders must match their respective **openers** (e.g., `(` with `)`, `{` with `}`, `[` with `]`).
 
+- **Parentheses Validation Example:**  
+  [`validatingNestedParentheses.cpp`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/validatingNestedParentheses.cpp)
+
 ---
 
 ## 🧪 Example (Parentheses Validation)
@@ -53,14 +56,14 @@ To determine if a string of parentheses is valid:
 Input: { x + (y - [a + b]) - (d + e) } - (j - (k - l))
 ```
 
-🔗 **Code Example on GitHub:**  
-[Validating Nested Parentheses - C++ Implementation](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/validatingNestedParentheses.cpp)
-
 ---
 
 ## 🔄 Infix to Postfix Conversion
 
 Infix expressions (like `A + B`) require precedence rules and parentheses, while **postfix** expressions (like `AB+`) do not.
+
+- **Infix to Postfix Conversion:**  
+  [`infixToPostfix.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/infixToPostfix.c)
 
 ### 💡 Rules
 
@@ -84,13 +87,14 @@ Infix expressions (like `A + B`) require precedence rules and parentheses, while
 | `(A + B) * (C - D)`                    | `AB+CD-*`                        |
 | `A + (B * C - D) + (E / F / (G + H))`  | `ABC*D-+EF/GH+/+`                |
 
-📘 These examples help visualize how expressions are transformed using stack operations.
-
 ---
 
 ## 📤 Postfix Expression Evaluation
 
 Postfix (or Reverse Polish Notation) is easy to evaluate using stacks and avoids the need for parentheses.
+
+- **Postfix Evaluation Code:**  
+  [`solvingPostfixFormat.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/solvingPostfixFormat.c)
 
 - Read the expression left to right
 - Push operands onto the stack
@@ -99,6 +103,9 @@ Postfix (or Reverse Polish Notation) is easy to evaluate using stacks and avoids
   - Apply the operator
   - Push the result back
 
-🔗 **Code Example on GitHub:**  
-[Solving Postfix Format - C Implementation](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/solvingPostfixFormat.c)
+---
 
+## 📄 Documentation
+
+- **This overview:**  
+  [`stack-overview.md`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/stack-overview.md)
