@@ -28,54 +28,40 @@ Stacks are widely used in:
 
 ---
 
-## 🧱 Stack Implementation and Usage
+## 🧱 Stack Implementations
 
-- **Stack Template in C:**  
-  [`stackTemplateInC.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/stackTemplateInC.c)
-- **Stack Usage Example:**  
-  [`stackUsageExample.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/stackUsageExample.c)
+### C Implementation
 
----
+- [`stackTemplateInC.c`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackTemplateInC.c): Stack implementation template in C.
+- [`stackUsageExample.c`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackUsageExample.c): Example of stack usage in C.
 
-## ✅ Validating Nested Parentheses with Stack
+### Modern C++ Implementation
 
-To determine if a string of parentheses is valid:
-
-1. Each **right parenthesis** must match a **preceding left parenthesis**.
-2. The number of left and right parentheses must be **equal**.
-3. Scope enders must match their respective **openers** (e.g., `(` with `)`, `{` with `}`, `[` with `]`).
-
-- **Parentheses Validation Example:**  
-  [`validatingNestedParentheses.cpp`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/validatingNestedParentheses.cpp)
+- [`stackTemplateInCpp.cpp`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackTemplateInCPP.cpp):  
+  Reusable, type-safe stack class using C++ templates. Supports `push`, `pop`, `size`, and `empty` operations, and throws exceptions on overflow/underflow.
+- [`stackUsageExampleCpp.cpp`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stackUsageExample.cpp):  
+  Usage demonstration of the C++ stack template, showing how to create a stack, push/pop elements, and check size and emptiness.
 
 ---
 
-## 🧪 Example (Parentheses Validation)
+## ✅ Parentheses Validation
 
+- [`validatingNestedParentheses.cpp`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/validatingNestedParentheses.cpp):  
+  Checks for valid nested parentheses using a stack in C++.
+
+**Example Input:**  
 ```text
-Input: { x + (y - [a + b]) - (d + e) } - (j - (k - l))
+{ x + (y - [a + b]) - (d + e) } - (j - (k - l))
 ```
 
 ---
 
 ## 🔄 Infix to Postfix Conversion
 
-Infix expressions (like `A + B`) require precedence rules and parentheses, while **postfix** expressions (like `AB+`) do not.
+- [`infixToPostfix.c`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/infixToPostfix.c):  
+  Converts infix mathematical expressions to postfix notation (Reverse Polish Notation) using a stack.
 
-- **Infix to Postfix Conversion:**  
-  [`infixToPostfix.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/infixToPostfix.c)
-
-### 💡 Rules
-
-1. **Operands (variables or numbers)** are added directly to output.
-2. **Operators** are pushed onto a stack.
-3. **Left parenthesis** `(` is pushed to the stack.
-4. **Right parenthesis** `)` causes popping until matching `(` is found.
-5. Operators are popped based on **precedence and associativity**.
-
----
-
-## 🧪 Infix to Postfix – Examples
+**Infix to Postfix Examples:**
 
 | Infix Expression                        | Postfix Output                  |
 |----------------------------------------|----------------------------------|
@@ -91,21 +77,8 @@ Infix expressions (like `A + B`) require precedence rules and parentheses, while
 
 ## 📤 Postfix Expression Evaluation
 
-Postfix (or Reverse Polish Notation) is easy to evaluate using stacks and avoids the need for parentheses.
-
-- **Postfix Evaluation Code:**  
-  [`solvingPostfixFormat.c`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/solvingPostfixFormat.c)
-
-- Read the expression left to right
-- Push operands onto the stack
-- On encountering an operator:
-  - Pop two operands
-  - Apply the operator
-  - Push the result back
+- [`solvingPostfixFormat.c`](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/solvingPostfixFormat.c):  
+  Evaluates mathematical expressions given in postfix notation (Reverse Polish Notation) using a stack.  
+  This file demonstrates how to process and solve postfix expressions by reading the expression, pushing operands onto the stack, and applying operators.
 
 ---
-
-## 📄 Documentation
-
-- **This overview:**  
-  [`stack-overview.md`](https://github.com/0marwalied/Data-Structures-Book/blob/085ecbf47351b62487e20775939716e15b9935a9/Stack/stack-overview.md)
