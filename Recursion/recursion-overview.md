@@ -98,6 +98,15 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 
 ---
 
+### 5. **Algebraic Expressions Validation**
+- **Definition**:
+  - Validates algebraic expressions recursively by breaking them into components like expressions, terms, and factors.
+- **Idea**: Uses recursion to parse and validate expressions in the form of strings.
+- **Source Code**:
+  - [Recursive Algebraic Expressions Validator](https://github.com/0marwalied/Data-Structures-Book/blob/2b9f89e7579ead03597312cddd70c80a858f5c1b/Recursion/algebraic-expressions.md)
+
+---
+
 ## ⚠️ Common Pitfalls
 
 1. **Missing Base Case**:
