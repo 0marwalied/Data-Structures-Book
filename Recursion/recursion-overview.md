@@ -35,6 +35,9 @@ Recursion is a fundamental programming concept wherein a function calls itself d
     `factorial(0) -> 1` (base case)  
     Result: `3 * 2 * 1 * 1 = 6`
 
+- **Source Code**:
+  - [Factorial Function](https://github.com/0marwalied/Data-Structures-Book/blob/9b164915a156894529662e14d82c129e867807e0/Recursion/recursionExamples.c#L8)
+
 ---
 
 ### 2. **Multiplication of Natural Numbers**
@@ -49,6 +52,9 @@ Recursion is a fundamental programming concept wherein a function calls itself d
     `multiply(4, 1) -> 4 + multiply(4, 0)`  
     `multiply(4, 0) -> 0` (base case)  
     Result: `4 + 4 + 4 = 12`
+
+- **Source Code**:
+  - [Multiplication Function](https://github.com/0marwalied/Data-Structures-Book/blob/9b164915a156894529662e14d82c129e867807e0/Recursion/recursionExamples.c#L25)
 
 ---
 
@@ -67,6 +73,9 @@ Recursion is a fundamental programming concept wherein a function calls itself d
     `fib(0) -> 0` (base case)  
     Result: `fib(4) = 3 + 2 = 5`
 
+- **Source Code**:
+  - [Fibonacci Function](https://github.com/0marwalied/Data-Structures-Book/blob/9b164915a156894529662e14d82c129e867807e0/Recursion/recursionExamples.c#L42)
+
 ---
 
 ### 4. **Binary Search**
@@ -83,6 +92,9 @@ Recursion is a fundamental programming concept wherein a function calls itself d
       - Divide: `[1, 3, 5]` (left half), `[7, 9]` (right half)
       - Compare middle: `5 == Target`  
       Result: Found at index `2`.
+
+- **Source Code**:
+  - [Binary Search Function](https://github.com/0marwalied/Data-Structures-Book/blob/9b164915a156894529662e14d82c129e867807e0/Recursion/recursionExamples.c#L67)
 
 ---
 
