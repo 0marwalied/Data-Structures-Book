@@ -20,6 +20,10 @@ Each file provides clean, well-structured code to support learning, revision, an
   &nbsp;&nbsp;• [stack-overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stack-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Comprehensive documentation of stack concepts, usage, and code examples.
 
+- [`Recursion/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Recursion) – Recursion concepts and examples  
+  &nbsp;&nbsp;• [recursion-overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Recursion/recursion-overview.md):  
+  &nbsp;&nbsp;&nbsp;&nbsp;Detailed explanation of recursion basics, key concepts, and examples like factorial, Fibonacci, and Tower of Hanoi.
+
 - *(More folders will be added soon, e.g., `LinkedList/`, `Queue/`, etc.)*
 
 ---
