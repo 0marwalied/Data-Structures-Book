@@ -94,7 +94,7 @@ Peg C: [3, 2, 1]
 ---
 
 ## 📂 Source Code
-The implementation of the Tower of Hanoi problem can be found [here](https://github.com/0marwalied/Data-Structures-Book/files/Recursion/towerHanoiProblem.cpp).
+The implementation of the Tower of Hanoi problem can be found [here](https://github.com/0marwalied/Data-Structures-Book/blob/main/Recursion/towerHanoiProblem.cpp).
 
 ---
 
