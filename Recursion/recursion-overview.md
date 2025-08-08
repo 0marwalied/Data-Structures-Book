@@ -107,6 +107,24 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 
 ---
 
+### 6. **Tower of Hanoi**
+- **Definition**:
+  - The Tower of Hanoi is a classic mathematical puzzle that demonstrates the power of recursion. It involves moving a series of disks from one rod to another following specific rules:
+    1. Only one disk can be moved at a time.
+    2. A disk can only be placed on top of a larger disk or an empty rod.
+    3. The goal is to move all disks from the source rod to the destination rod.
+- **Idea**:
+  - The puzzle is solved recursively:
+    - **Base Case**: If there is only one disk, move it directly from the source rod to the destination rod.
+    - **Recursive Case**:
+      - Move `n-1` disks from the source rod to the auxiliary rod.
+      - Move the `nth` disk from the source rod to the destination rod.
+      - Move the `n-1` disks from the auxiliary rod to the destination rod.
+- **Source Code**:
+  - [Tower of Hanoi Problem](https://github.com/0marwalied/Data-Structures-Book/files/Recursion/tower-of-hanoi.md)
+
+---
+
 ## ⚠️ Common Pitfalls
 
 1. **Missing Base Case**:
