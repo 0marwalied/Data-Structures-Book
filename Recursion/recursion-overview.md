@@ -7,10 +7,12 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ## 📘 Key Concepts
 
 1. **Base Case**:
+
    - A condition that stops the recursion to prevent infinite loops.
    - Example: In calculating factorial, the base case is when `n == 0`.
 
 2. **Recursive Case**:
+
    - The part of the function that reduces the problem size and calls itself.
    - Example: `factorial(n) = n * factorial(n-1)`.
 
@@ -23,11 +25,13 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ## 📂 Examples and Tracing
 
 ### 1. **Factorial Calculation**
+
 - **Definition**:
-  - `n! = 1` if `n = 0`  
+  - `n! = 1` if `n = 0`
   - `n! = n * (n - 1) * ... * 1` if `n > 0`
 - **Idea**: Factorial of a number `n` is the product of all positive integers less than or equal to `n`.
 - **Tracing**:
+
   - For `factorial(3)`:  
     `factorial(3) -> 3 * factorial(2)`  
     `factorial(2) -> 2 * factorial(1)`  
@@ -41,11 +45,13 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ---
 
 ### 2. **Multiplication of Natural Numbers**
+
 - **Definition**:
-  - `a * b = a` if `b = 1`  
+  - `a * b = a` if `b = 1`
   - `a * b = a * (b - 1) + a` if `b > 1`
 - **Idea**: Multiply two natural numbers using recursion by repeated addition.
 - **Tracing**:
+
   - For `multiply(4, 3)`:
     `multiply(4, 3) -> 4 + multiply(4, 2)`  
     `multiply(4, 2) -> 4 + multiply(4, 1)`  
@@ -59,12 +65,14 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ---
 
 ### 3. **Fibonacci Sequence**
+
 - **Definition**:
-  - `fib(n) = n` if `n = 0` or `n = 1`  
+  - `fib(n) = n` if `n = 0` or `n = 1`
   - `fib(n) = fib(n-1) + fib(n-2)` if `n >= 2`
 - **Idea**: Fibonacci sequence is defined as:  
   `fib(0) = 0, fib(1) = 1, fib(n) = fib(n-1) + fib(n-2)`
 - **Tracing**:
+
   - For `fib(4)`:
     `fib(4) -> fib(3) + fib(2)`  
     `fib(3) -> fib(2) + fib(1)`  
@@ -79,19 +87,21 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ---
 
 ### 4. **Binary Search**
+
 - **Definition**:
-  - If `low > high`, return `-1`  
-  - `mid = (low + high) / 2`  
-  - If `x == a[mid]`, return `mid`  
-  - If `x < a[mid]`, search for `x` in `a[low]` to `a[mid-1]`  
+  - If `low > high`, return `-1`
+  - `mid = (low + high) / 2`
+  - If `x == a[mid]`, return `mid`
+  - If `x < a[mid]`, search for `x` in `a[low]` to `a[mid-1]`
   - Else, search for `x` in `a[mid+1]` to `a[high]`
 - **Idea**: Search for an element in a sorted array by dividing the array into halves recursively.
 - **Tracing**:
+
   - Array: `[1, 3, 5, 7, 9]`, Target: `5`
     - `binarySearch(arr, 5)`:
       - Divide: `[1, 3, 5]` (left half), `[7, 9]` (right half)
       - Compare middle: `5 == Target`  
-      Result: Found at index `2`.
+        Result: Found at index `2`.
 
 - **Source Code**:
   - [Binary Search Function](https://github.com/0marwalied/Data-Structures-Book/blob/9b164915a156894529662e14d82c129e867807e0/Recursion/recursionExamples.c#L67)
@@ -99,6 +109,7 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ---
 
 ### 5. **Algebraic Expressions Validation**
+
 - **Definition**:
   - Validates algebraic expressions recursively by breaking them into components like expressions, terms, and factors.
 - **Idea**: Uses recursion to parse and validate expressions in the form of strings.
@@ -108,6 +119,7 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 ---
 
 ### 6. **Tower of Hanoi**
+
 - **Definition**:
   - The Tower of Hanoi is a classic mathematical puzzle that demonstrates the power of recursion. It involves moving a series of disks from one rod to another following specific rules:
     1. Only one disk can be moved at a time.
@@ -121,16 +133,18 @@ Recursion is a fundamental programming concept wherein a function calls itself d
       - Move the `nth` disk from the source rod to the destination rod.
       - Move the `n-1` disks from the auxiliary rod to the destination rod.
 - **Source Code**:
-  - [Tower of Hanoi Problem](https://github.com/0marwalied/Data-Structures-Book/files/Recursion/tower-of-hanoi.md)
+  - [Tower of Hanoi Problem](https://github.com/0marwalied/Data-Structures-Book/blob/main/Recursion/tower-of-hanoi.md)
 
 ---
 
 ## ⚠️ Common Pitfalls
 
 1. **Missing Base Case**:
+
    - Leads to infinite recursion and stack overflow.
 
 2. **Inefficient Recursion**:
+
    - Recomputing values multiple times (e.g., Fibonacci without memoization).
 
 3. **Stack Overflow**:
