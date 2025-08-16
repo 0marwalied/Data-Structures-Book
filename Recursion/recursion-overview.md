@@ -137,6 +137,15 @@ Recursion is a fundamental programming concept wherein a function calls itself d
 
 ---
 
+### 7. **Simulation and Recursion**
+
+- **Definition**:
+  - Simulating recursion explicitly using stack-based implementations.
+- **Source Code**:
+  - [Simulation and Recursion Guide](https://github.com/0marwalied/Data-Structures-Book/blob/main/Recursion/simulation-recursion-guide.md)
+
+---
+
 ## ⚠️ Common Pitfalls
 
 1. **Missing Base Case**:
