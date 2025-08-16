@@ -8,17 +8,17 @@ Each file provides clean, well-structured code to support learning, revision, an
 
 ## 📂 Folder Structure
 
-- [`Intro/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Intro) – Foundational concepts and rational number examples  
-  &nbsp;&nbsp;• [Floating Point Notation Problem.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/Floating%20Point%20Notation%20Problem.md):  
-  &nbsp;&nbsp;&nbsp;&nbsp;Explains floating-point representation issues and common pitfalls in C++.  
-  &nbsp;&nbsp;• [rationalClass.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/rationalClass.cpp):  
-  &nbsp;&nbsp;&nbsp;&nbsp;Implements rational numbers using a C++ class, demonstrating operator overloading and inheritance.  
-  &nbsp;&nbsp;• [rationalStruct.cpp](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/rationalStruct.cpp):  
-  &nbsp;&nbsp;&nbsp;&nbsp;Shows rational numbers with a C++ struct, focusing on simplicity and core operator overloading.
+- [`Intro/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Intro)  
+  &nbsp;&nbsp;• [Intro Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/7f1f2d791fa9516b19d9f19a1deb44a6b0c421e3/Intro/intro-overview.md):  
+  &nbsp;&nbsp;&nbsp;&nbsp;Provides an overview of floating-point notation and rational number implementations.  
 
-- [`Stack/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Stack) – Stack operations and use cases  
-  &nbsp;&nbsp;• [stack-overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stack-overview.md):  
+- [`Stack/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Stack)  
+  &nbsp;&nbsp;• [Stack Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stack-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Comprehensive documentation of stack concepts, usage, and code examples.
+
+- [`Recursion/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Recursion)  
+  &nbsp;&nbsp;• [Recursion Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Recursion/recursion-overview.md):  
+  &nbsp;&nbsp;&nbsp;&nbsp;Detailed explanation of recursive simulations using stacks.
 
 - *(More folders will be added soon, e.g., `LinkedList/`, `Queue/`, etc.)*
 
