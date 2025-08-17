@@ -34,7 +34,7 @@ public:
 		return rational{numerator, denominator} + rational{n, 1};
 	}
 
-	rational operator+(const rational& r) const {
+	rational operator + (const rational& r) const {
 		return rational(numerator * r.denominator + r.numerator * denominator,
 		                denominator * r.denominator);
 	}
@@ -45,7 +45,7 @@ public:
 		removeAdditionalNumbers();
 	}
 
-	rational operator*(const rational& r) const {
+	rational operator * (const rational& r) const {
 		return rational(numerator * r.numerator, denominator * r.denominator);
 	}
 
@@ -55,7 +55,7 @@ public:
 		removeAdditionalNumbers();
 	}
 
-	rational operator/(const rational& rn) const {
+	rational operator / (const rational& rn) const {
 		return rational(numerator * rn.denominator, denominator * rn.numerator);
 	}
 
@@ -66,23 +66,22 @@ public:
 		denominator = res.denominator;
 	}
 
-	rational& operator=(const rational& rn) {
+	rational& operator = (const rational& rn) {
 		numerator = rn.numerator, denominator = rn.denominator;
 		return *this;
 	}
 
-
-	bool operator==(const rational& r) const {
+	bool operator == (const rational& r) const {
 		return numerator * r.denominator == denominator * r.numerator;
 	}
 
-	friend ostream& operator<<(ostream& os, const rational& r) {
+	friend ostream& operator << (ostream& os, const rational& r) {
 		r.checkValiedFormat();
 		os << r.numerator << "/" << r.denominator;
 		return os;
 	}
 
-	friend istream& operator>>(istream& is, rational& r) {
+	friend istream& operator >> (istream& is, rational& r) {
 		is >> r.numerator >> r.denominator;
 		r.checkValiedFormat();
 		r.removeAdditionalNumbers();
