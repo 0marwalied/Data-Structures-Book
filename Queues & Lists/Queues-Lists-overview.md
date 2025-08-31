@@ -149,6 +149,6 @@ If you prefer, I can apply the fix directly to `Queue.c`, add a corresponding `e
 
 ## 🧾 Example implementation — `Queue.c`
 
-Source (GitHub): [Queue.c on GitHub](https://github.com/0marwalied/Data-Structures-Book/blob/main/Queues%20%26%20Lists/Queue.c)
+Source (GitHub): [Queue.c](https://github.com/0marwalied/Data-Structures-Book/blob/main/Queues%20%26%20Lists/Queue.c)
 
 See the implementation on GitHub (link above) for the exact source.
