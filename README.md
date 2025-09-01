@@ -9,7 +9,7 @@ Each file provides clean, well-structured code to support learning, revision, an
 ## 📚 Book Chapters
 
 - 📖 [`Intro/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Intro)  
-  &nbsp;&nbsp;• [Intro Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/7f1f2d791fa9516b19d9f19a1deb44a6b0c421e3/Intro/README.md):  
+  &nbsp;&nbsp;• [Intro Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Intro/README.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Provides an overview of floating-point notation and rational number implementations.
 
 - 🏗️ [`Stack/`](https://github.com/0marwalied/Data-Structures-Book/tree/7fdaed2dba0ea3d0933b525e85e3622bf91d0d20/Stack)  
