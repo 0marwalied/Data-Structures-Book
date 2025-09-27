@@ -6,7 +6,7 @@ Each file provides clean, well-structured code to support learning, revision, an
 
 ---
 
-## 📂 Folder Structure
+## 📚 Book Chapters
 
 - [`Intro/`](./Intro)  
   &nbsp;&nbsp;• [Intro Overview.md](./Intro/intro-overview.md):  
@@ -20,13 +20,18 @@ Each file provides clean, well-structured code to support learning, revision, an
   &nbsp;&nbsp;• [Recursion Overview.md](./Recursion/recursion-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Detailed explanation of recursive simulations using stacks.
 
-- *(More folders will be added soon, e.g., `LinkedList/`, `Queue/`, etc.)*
+- 📋 [`Queues & Lists/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Queues%20%26%20Lists)  
+  &nbsp;&nbsp;• [Queues Lists overview](https://github.com/0marwalied/Data-Structures-Book/blob/main/Queues%20%26%20Lists/README.md):  
+  &nbsp;&nbsp;&nbsp;&nbsp;Overview of queue concepts, circular-buffer implementation notes, and example code.
+
+- _(More folders will be added soon, e.g. 🌳 `Tree/`, `Graph/`, etc.)_
 
 ---
 
 ## 🚀 How to Use
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/omar-walied/Data-Structures-Book.git
 cd Data-Structures-Book
