@@ -9,15 +9,15 @@ Each file provides clean, well-structured code to support learning, revision, an
 ## 📂 Folder Structure
 
 - [`Intro/`](./Intro)  
-  &nbsp;&nbsp;• [Intro Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/7f1f2d791fa9516b19d9f19a1deb44a6b0c421e3/Intro/intro-overview.md):  
+  &nbsp;&nbsp;• [Intro Overview.md](./Intro/intro-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Provides an overview of floating-point notation and rational number implementations.  
 
 - [`Stack/`](./Stack)  
-  &nbsp;&nbsp;• [Stack Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Stack/stack-overview.md):  
+  &nbsp;&nbsp;• [Stack Overview.md](./Stack/stack-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Comprehensive documentation of stack concepts, usage, and code examples.
 
 - [`Recursion/`](./Recursion)  
-  &nbsp;&nbsp;• [Recursion Overview.md](https://github.com/0marwalied/Data-Structures-Book/blob/main/Recursion/recursion-overview.md):  
+  &nbsp;&nbsp;• [Recursion Overview.md](./Recursion/recursion-overview.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Detailed explanation of recursive simulations using stacks.
 
 - *(More folders will be added soon, e.g., `LinkedList/`, `Queue/`, etc.)*
