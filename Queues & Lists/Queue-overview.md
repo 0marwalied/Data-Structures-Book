@@ -1,44 +1,76 @@
-# 📚 Queues — Formal Definition and Circular Queue Update
+# 📚 Queues — Formal Definition and Implementations
 
-## ⚙️ Queue — formal definition
+---
+
+## ⚙️ Queue — Formal Definition
 
 A queue is a linear abstract data type (ADT) that models a collection of elements with two primary operations:
 
-- ➕ Enqueue(x): insert element x at the rear (also called tail) of the queue.
-- ➖ Dequeue(): remove and return the element at the front (also called head) of the queue.
+- ➕ **Enqueue(x)**: Insert element x at the rear (also called tail) of the queue.
+- ➖ **Dequeue()**: Remove and return the element at the front (also called head) of the queue.
 
-### 🧾 Formal contract
+---
 
-- Data shape: a finite sequence of elements (a0, a1, ..., a\_{k-1}).
-- Invariants:
+## 🧾 Formal Contract
+
+- **Data Shape**: A finite sequence of elements (a0, a1, ..., a\_{k-1}).
+- **Invariants**:
   - ✅ Elements are ordered by time of insertion (FIFO — first-in, first-out).
   - ✅ Only the front element can be removed; insertions always happen at the rear.
 
-### 🔧 Operations (specification)
+---
 
-- isEmpty() -> bool
+## 🔧 Operations (Specification)
 
-  - Precondition: none
-  - Postcondition: returns true if the sequence is empty (k == 0)
+- **isEmpty() -> bool**
+  - **Precondition**: None
+  - **Postcondition**: Returns true if the sequence is empty (k == 0)
 
-- enqueue(x) -> void or error
+- **enqueue(x) -> void or error**
+  - **Precondition**: Queue is not full (if there is a bounded capacity)
+  - **Postcondition**: Sequence becomes (a0, ..., a\_{k-1}, x)
 
-  - Precondition: queue is not full (if there is a bounded capacity)
-  - Postcondition: sequence becomes (a0, ..., a\_{k-1}, x)
+- **dequeue() -> element or error**
+  - **Precondition**: Queue is not empty (k > 0)
+  - **Postcondition**: Returns a0 and sequence becomes (a1, ..., a\_{k-1})
 
-- dequeue() -> element or error
-  - Precondition: queue is not empty (k > 0)
-  - Postcondition: returns a0 and sequence becomes (a1, ..., a\_{k-1})
+---
 
-### ⏱ Complexity guarantees (typical implementations)
+## 🛠 Implementations
 
-- enqueue: O(1) amortized or worst-case
-- dequeue: O(1)
+### Circular Queue (Array-Based)
 
-### ⚠️ Edge cases and error modes
+- **Description**: Uses a fixed-size array to implement a circular buffer.
+- **Advantages**: Simple and efficient for bounded queues.
+- **Disadvantages**: Requires a predefined capacity and resizing is expensive.
 
-- ⛔ Underflow: calling dequeue on an empty queue — should return an error or raise an exception depending on the environment.
-- ⛔ Overflow: enqueue on a bounded-capacity queue when full — either reject the insertion (error) or resize the underlying storage.
+### Linked List-Based Queue
+
+- **Description**: Uses a linked list where each node contains the data and a pointer to the next node.
+- **Advantages**: Dynamic size, no need for resizing.
+- **Disadvantages**: Extra memory overhead for storing pointers.
+
+#### Code Example
+
+The linked list-based queue implementation can be found in the file:
+
+- [QueueWithLinkedList.c](./QueueWithLinkedList.c): Implementation of a queue using a linked list.
+
+---
+
+## ⏱ Complexity Guarantees (Typical Implementations)
+
+- **enqueue**: O(1) amortized or worst-case
+- **dequeue**: O(1)
+
+---
+
+## ⚠️ Edge Cases and Error Modes
+
+- ⛔ **Underflow**: Calling dequeue on an empty queue — should return an error or raise an exception depending on the environment.
+- ⛔ **Overflow**: Enqueue on a bounded-capacity queue when full — either reject the insertion (error) or resize the underlying storage.
+
+---
 
 ## 🔁 Update: Circular queue (fixed-size circular buffer)
 
@@ -149,7 +181,6 @@ If you prefer, I can apply the fix directly to `Queue.c`, add a corresponding `e
 
 ## 🧾 Example implementation — `Queue.c`
 
-Source (GitHub): [Queue.c](https://github.com/0marwalied/Data-Structures-Book/blob/main/Queues%20%26%20Lists/Queue.c)
+Source (GitHub): [Queue.c](./Queue.c)
 
-See the implementation on GitHub (link above) for the exact source.</content>
-<parameter name="filePath">d:\CP\Data-Structures-Book\Queues & Lists\Queue-README.md
+See the implementation on GitHub (link above) for the exact source.
