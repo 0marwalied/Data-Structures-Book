@@ -4,8 +4,8 @@ This folder contains implementations and documentation for **Queues** and **Link
 
 ## 📖 Contents
 
-- **Queues**: [Queue-README.md](Queue-README.md) — Formal definition, circular queue implementation, and example code.
-- **Linked Lists**: [LinkedList-README.md](LinkedList-README.md) — Dynamic linked list implementation, comparison to arrays, and disadvantages of array-based lists.
+- **Queues**: [Queue-README.md](Queue-overview.md) — Formal definition, circular queue implementation, and example code.
+- **Linked Lists**: [LinkedList-README.md](LinkedList-overview.md) — Dynamic linked list implementation, comparison to arrays, and disadvantages of array-based lists.
 
 ## Files in This Folder
 
