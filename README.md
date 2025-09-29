@@ -20,7 +20,7 @@ Each file provides clean, well-structured code to support learning, revision, an
   &nbsp;&nbsp;• [Recursion Overview.md](./Recursion/README.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Detailed explanation of recursive simulations using stacks.
 
-- 📋 [`Queues & Lists/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Queues%20%26%20Lists)  
+- [`Queues & Lists/`](https://github.com/0marwalied/Data-Structures-Book/tree/main/Queues%20%26%20Lists)  
   &nbsp;&nbsp;• [Queues Overview.md](./Queues%20&%20Lists/README.md):  
   &nbsp;&nbsp;&nbsp;&nbsp;Overview of queue concepts, circular-buffer implementation notes, and example code.
 
